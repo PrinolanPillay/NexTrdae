@@ -1,0 +1,125 @@
+ *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#60A5FA;
+        }
+
+        .login_container{
+            width:350px;
+            background:white;
+            padding:40px 30px;
+            border-radius:8px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .login_container h1{
+            text-align:center;
+            margin-bottom:30px;
+            color:black;
+        }
+
+        .input_group{
+            margin-bottom:20px;
+        }
+
+        .input_group label{
+            display:block;
+            margin-bottom:8px;
+            
+            color:black;
+        }
+
+        .input_group input{
+            width:100%;
+            padding:12px;
+            border:1px solid black;
+            border-radius:8px;
+            font-size:15px;
+        }
+
+        .input_group input:focus{
+            border-color:#005eff;
+            outline:none;
+            box-shadow:0 0 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .login_btn{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:8px;
+            background:#2a5298;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .login_btn:hover{
+            background:#1e3c72;
+        }
+
+        .signup_text{
+            text-align:center;
+            margin-top:20px;
+            font-size:14px;
+        }
+
+        .signup_text a{
+            color:#2a5298;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .signup_text a:hover{
+            text-decoration:underline;
+        }
+.forgot_password{
+padding-bottom: 15px;
+
+
+
+}
+         .error_box{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:300px;
+    background:#fd7070;
+    color: black;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    z-index:1000;
+}
+
+@media (max-width: 480px){
+
+    body{
+        align-items:flex-start; /* better scroll feel on small screens */
+    }
+
+    .login_container{
+        margin-top:250px;
+        padding:25px 20px;
+    }
+
+    .error_box{
+        width:90%;
+        right:5%;
+        left:5%;
+    }
+
+    .login_container h1{
+        font-size:22px;
+    }
+}

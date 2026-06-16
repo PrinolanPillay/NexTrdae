@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8fafc;
+}
+
+.layout{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===================== */
+/* SIDEBAR */
+/* ===================== */
+
+.sidebar{
+    width:240px;
+    background:#60A5FA;
+    padding:30px 15px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.08);
+}
+
+.heading{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:30px;
+    color:black;
+    text-align:center;
+}
+
+.admin_name{
+    display:block;
+    font-size:14px;
+    font-weight:normal;
+    margin-top:5px;
+    color:gray;
+}
+
+.navlist{
+    list-style:none;
+}
+
+.navlist a{
+    text-decoration:none;
+    color:black;
+    display:block;
+    padding:14px 18px;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.navlist a:hover{
+    background:white;
+    transform:translateX(5px);
+}
+
+.navlist a.active{
+    background:black;
+    color:white;
+}
+
+/* ===================== */
+/* CONTENT */
+/* ===================== */
+
+.content{
+    flex:1;
+    padding:40px;
+    overflow-x:auto;
+}
+
+.page_title{
+    font-size:28px;
+    margin-bottom:25px;
+    color:#111827;
+}
+
+/* ===================== */
+/* TABLE */
+/* ===================== */
+
+.product_table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.product_table th{
+    background:#2563eb;
+    color:white;
+    padding:18px;
+    text-align:left;
+    font-size:15px;
+    font-weight:600;
+}
+
+.product_table td{
+    padding:18px;
+    border-bottom:1px solid #e5e7eb;
+    font-size:14px;
+    color:#374151;
+}
+
+.product_table tr:hover{
+    background:#f9fafb;
+}
+
+/* ===================== */
+/* STATUS BADGES */
+/* ===================== */
+
+.status_open{
+    display:inline-block;
+    background:#fee2e2;
+    color:#dc2626;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.status_resolved{
+    display:inline-block;
+    background:#dcfce7;
+    color:#15803d;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* ===================== */
+/* OPEN BUTTON */
+/* ===================== */
+
+.edit{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.edit:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ===================== */
+/* TICKET COUNTER */
+/* ===================== */
+
+.ticket_summary{
+    display:flex;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.summary_card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    min-width:180px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.summary_card h3{
+    font-size:14px;
+    color:#6b7280;
+    margin-bottom:10px;
+}
+
+.summary_card span{
+    font-size:28px;
+    font-weight:bold;
+    color:#111827;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media(max-width:1200px){
+
+    .product_table{
+        min-width:1000px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .sidebar{
+        width:200px;
+    }
+
+    .content{
+        padding:20px;
+    }
+
+    .heading{
+        font-size:22px;
+    }
+
+    .ticket_summary{
+        flex-direction:column;
+    }
+
+}

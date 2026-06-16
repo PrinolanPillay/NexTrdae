@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    min-height:100vh;
+    padding:30px;
+}
+
+/* ========================= */
+/* CHAT CONTAINER */
+/* ========================= */
+
+.chat_container{
+    max-width:1200px;
+    margin:0 auto;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.chat_header{
+    background:#2563eb;
+    color:white;
+    padding:25px;
+}
+
+.chat_header h2{
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.customer_info{
+    line-height:1.8;
+    font-size:15px;
+}
+
+.customer_info strong{
+    font-size:18px;
+}
+
+/* ========================= */
+/* BACK BUTTON */
+/* ========================= */
+
+.back_btn{
+    display:inline-block;
+    margin-bottom:15px;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.back_btn:hover{
+    opacity:0.8;
+}
+
+/* ========================= */
+/* STATUS */
+/* ========================= */
+
+.status_open{
+    display:inline-block;
+    background:#dc2626;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.status_resolved{
+    display:inline-block;
+    background:#16a34a;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* ========================= */
+/* CHAT AREA */
+/* ========================= */
+
+.messages_container{
+    background:#f9fafb;
+    min-height:550px;
+    max-height:650px;
+    overflow-y:auto;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* ========================= */
+/* CUSTOMER MESSAGE */
+/* ========================= */
+
+.customer_message{
+    align-self:flex-start;
+    max-width:70%;
+    background:white;
+    border-radius:15px 15px 15px 5px;
+    padding:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.customer_message .message_sender{
+    color:#dc2626;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.customer_message .message_text{
+    color:#374151;
+    line-height:1.6;
+}
+
+.customer_message .message_time{
+    margin-top:10px;
+    font-size:12px;
+    color:#9ca3af;
+}
+
+/* ========================= */
+/* ADMIN MESSAGE */
+/* ========================= */
+
+.admin_message{
+    align-self:flex-end;
+    max-width:70%;
+    background:#2563eb;
+    color:white;
+    border-radius:15px 15px 5px 15px;
+    padding:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.admin_message .message_sender{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.admin_message .message_text{
+    line-height:1.6;
+}
+
+.admin_message .message_time{
+    margin-top:10px;
+    font-size:12px;
+    color:#dbeafe;
+}
+
+/* ========================= */
+/* REPLY SECTION */
+/* ========================= */
+
+.reply_section{
+    padding:25px;
+    border-top:1px solid #e5e7eb;
+}
+
+.reply_section textarea{
+    width:100%;
+    min-height:140px;
+    resize:vertical;
+    padding:15px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    font-size:14px;
+}
+
+.reply_section textarea:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 5px rgba(37,99,235,0.3);
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+.reply_section button{
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    padding:12px 24px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.reply_section button[name="send_message"]{
+    background:#2563eb;
+    color:white;
+    margin-top:15px;
+}
+
+.reply_section button[name="send_message"]:hover{
+    background:#1d4ed8;
+}
+
+.resolve_btn{
+    margin-top:15px;
+    background:#16a34a !important;
+    color:white;
+}
+
+.resolve_btn:hover{
+    background:#15803d !important;
+}
+
+/* ========================= */
+/* RESOLVED NOTICE */
+/* ========================= */
+
+.resolved_notice{
+    text-align:center;
+    padding:25px;
+    background:#dcfce7;
+    color:#166534;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* ========================= */
+/* SCROLLBAR */
+/* ========================= */
+
+.messages_container::-webkit-scrollbar{
+    width:8px;
+}
+
+.messages_container::-webkit-scrollbar-track{
+    background:#f1f5f9;
+}
+
+.messages_container::-webkit-scrollbar-thumb{
+    background:#cbd5e1;
+    border-radius:10px;
+}
+
+.messages_container::-webkit-scrollbar-thumb:hover{
+    background:#94a3b8;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:768px){
+
+    body{
+        padding:10px;
+    }
+
+    .chat_container{
+        border-radius:10px;
+    }
+
+    .customer_message,
+    .admin_message{
+        max-width:90%;
+    }
+
+    .messages_container{
+        padding:15px;
+    }
+
+    .reply_section{
+        padding:15px;
+    }
+
+    .chat_header{
+        padding:20px;
+    }
+
+    .chat_header h2{
+        font-size:22px;
+    }
+}

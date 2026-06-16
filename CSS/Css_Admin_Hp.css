@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+margin:0;
+
+
+}
+
+.heading{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:30px;
+    color:black;
+    text-align:center;
+}
+
+.admin_name{
+    display:block;
+    font-size:14px;
+    font-weight:normal;
+    margin-top:5px;
+    color:gray;
+}
+
+.layout{
+    display:flex;
+    height:100vh;
+}
+
+.sidebar{
+    width:240px;
+    background:#60A5FA;
+    padding:30px 15px;
+    box-shadow:2px 0 10px rgba(0,0,0,0.08);
+}
+.navlist{
+list-style:none;
+
+
+}
+.navlist a.active{
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+.navlist a{
+    text-decoration:none;
+    color:black;
+    display:block;
+    padding:14px 18px;
+    border-radius:10px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.navlist a:hover{
+    color: black;
+    background:rgb(255, 255, 255);
+    transform:translateX(5px);
+}
+
+
+.content{
+    flex:1;
+    padding:40px;
+}
+
+
+
+.product_table{
+    width:100%;
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:8px;
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+
+.product_table th{
+    background:#2563eb;
+    color:white;
+
+    padding:18px;
+
+    text-align:left;
+
+    font-size:15px;
+    font-weight:600;
+}
+
+
+
+.product_table td{
+    padding:18px;
+    border-bottom:1px solid #e5e7eb;
+
+    font-size:15px;
+    color:#374151;
+}
+
+
+
+.product_table tr:hover{
+    background:#f9fafb;
+}
+
+
+
+.item_page{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:600;
+}
+
+.item_page:hover{
+    text-decoration:underline;
+}
+
+
+
+.edit{
+    text-decoration:none;
+
+    background:#2563eb;
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    font-size:14px;
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.edit:hover{
+    background:#1d4ed8;
+}
+
+
+
+.delete{
+    display:inline-block;
+
+
+
+    text-decoration:none;
+
+    background:#f03b3b;
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+  font-size:14px;
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.delete:hover{
+    background:#c42d2d;
+    transform:translateY(-2px);
+}

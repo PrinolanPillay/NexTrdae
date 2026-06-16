@@ -1,0 +1,126 @@
+ *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+     body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    background:#60A5FA;
+}
+
+        .sign_up_container{
+            width:400px;
+            background:white;
+            padding:30px 30px;
+            border-radius:8px;
+            box-shadow:0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .sign_up_container h1{
+            text-align:center;
+            color:black;
+        }
+
+        .input_group{
+            margin-bottom:20px;
+        }
+
+        .input_group label{
+            display:block;
+           
+            margin-bottom:8px;
+            font-weight:bold;
+            color:#333;
+        }
+
+        .input_group input{
+            width:100%;
+            padding:5px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:15px;
+            transition:0.3s;
+        }
+
+        .input_group input:focus{
+            border-color:#2a5298;
+            outline:none;
+            box-shadow:0 0 5px rgba(42,82,152,0.4);
+        }
+
+        .sign_up_btn{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:8px;
+            background:#60A5FA;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .sign_up_btn:hover{
+            background:#1e3c72;
+        }
+
+        .signup_text{
+            text-align:center;
+            margin-top:20px;
+            font-size:14px;
+        }
+
+        .signup_text a{
+            color:#2a5298;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .signup_text a:hover{
+            text-decoration:underline;
+        }
+
+        .error_box{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:300px;
+    background:#fd7070;
+    color: black;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    z-index:1000;
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVENESS     */
+/* ========================= */
+@media (max-width: 480px){
+
+    body{
+        align-items:flex-start;
+        padding: 0px 20px;
+    }
+
+    .sign_up_container{
+        margin-top:30px;
+        padding:20px 30px;
+    }
+
+    .sign_up_container h1{
+        font-size:22px;
+    }
+
+    .error_box{
+        width:90%;
+        left:5%;
+        right:5%;
+    }
+}
