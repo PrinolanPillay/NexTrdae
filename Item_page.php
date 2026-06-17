@@ -324,7 +324,7 @@ if(isset($_SESSION["admin_access"]) && $_SESSION["admin_access"] == 1){
         Sold Out
     </button>
 
-<?php elseif(!$isAdmin): ?>
+<?php elseif(isset($_SESSION["login_id"]) && !$isAdmin ): ?>
 
     <form method="post" action="AddToCart.php">
 
