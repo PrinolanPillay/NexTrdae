@@ -59,7 +59,8 @@ Delete Account
     <?php while($row = $result->fetch_assoc()) { ?>
     <tr>
         <td><?php echo $row['product_id']; ?></td>
-        <td><a href="item_page.php" class="item_page"><?php echo $row['product_name']; ?></a></td>
+        <td> <a href="Item_page.php?id=<?php echo $row['product_id']; ?>" class="item_page"><?php echo $row['product_name']; ?>
+    </a></td>
         <td>R<?php echo $row['product_price']; ?></td>
         <td>
             <?php 
