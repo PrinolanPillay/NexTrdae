@@ -125,7 +125,7 @@ $order = $rows[0];
     <ul class="navlist">
         <li><a href="Admin_Home_Page.php">Product List</a></li>
         <li><a href="Admin_User_List.php">User Accounts</a></li>
-        <li><a href="Admin_Order_List.php" class="active">Orders</a></li>
+        <li><a href="Admin_Order.php" class="active">Orders</a></li>
         <li><a href="Admin_Support.php">Support Tickets</a></li>
         <li><a href="LogOut.php">Logout</a></li>
     </ul>
@@ -136,7 +136,7 @@ $order = $rows[0];
 
 <h1 class="page_title">Order #<?php echo $order_id; ?></h1>
 
-<a href="Admin_Order_List.php" class="back_btn">Back to Orders</a>
+<a href="Admin_Order.php" class="back_btn">Back to Orders</a>
 
 <div class="info_grid">
 
